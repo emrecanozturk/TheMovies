@@ -14,6 +14,7 @@ struct MoviesResponseModel: BaseResponseProtocol {
 }
 
 struct MovieResponseModel: BaseResponseProtocol {
+    let id                : Int?
     let name              : String?
     let overview          : String?
     let voteAverage       : Float?

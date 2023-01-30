@@ -10,16 +10,20 @@ import UIKit
 
 protocol MoviesBusinessLogic {
     func getMovies(request: Movies.Models.Request)
+    func setMovies(index: Int, model: MovieResponseModel?)
 }
 
 protocol MoviesDataStore {
-    //var name: String { get set }
+    var movieModel: MovieResponseModel? { get }
+    var index     : Int? { get }
 }
 
 class MoviesInteractor: MoviesBusinessLogic, MoviesDataStore {
     var presenter: MoviesPresentationLogic?
     var worker: MoviesWorker?
-    //var name: String = ""
+    
+    var movieModel: MovieResponseModel?
+    var index: Int?
   
     // MARK: Do something
   
@@ -32,5 +36,10 @@ class MoviesInteractor: MoviesBusinessLogic, MoviesDataStore {
             guard let self = self else { return }
             self.presenter?.presentFailure(message: error.localizedDescription)
         })
+    }
+    
+    func setMovies(index: Int, model: MovieResponseModel?) {
+        self.index = index
+        self.movieModel = model
     }
 }

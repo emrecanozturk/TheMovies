@@ -24,7 +24,7 @@ class MoviesViewController: UIViewController, MoviesDisplayLogic {
     private var totalPageCount: Int = 0
     private var maxPageCount: Int = 0
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     // MARK: Object lifecycle
   
@@ -115,7 +115,8 @@ class MoviesViewController: UIViewController, MoviesDisplayLogic {
 extension MoviesViewController: MoviesPresenting {
     
     func currentSelected(_ index: Int) {
-//        presentMovieDetail(index: index)
+        interactor?.setMovies(index: index, model: tableViewDataSource.movies?.results?[index])
+        router?.rotueDeatilScene()
     }
     
     func willDisplayCell(_ index: Int) {

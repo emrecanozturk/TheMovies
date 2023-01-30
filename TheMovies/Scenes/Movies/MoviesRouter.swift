@@ -9,7 +9,7 @@
 import UIKit
 
 @objc protocol MoviesRoutingLogic {
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
+    func rotueDeatilScene()
 }
 
 protocol MoviesDataPassing {
@@ -22,32 +22,14 @@ class MoviesRouter: NSObject, MoviesRoutingLogic, MoviesDataPassing {
   
     // MARK: Routing
 
-    //func routeToSomewhere(segue: UIStoryboardSegue?) {
-    //
-    //  if let segue = segue {
-    //    let destinationVC = segue.destination as! SomewhereViewController
-    //    var destinationDS = destinationVC.router!.dataStore!
-    //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-    //  } else {
-    //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-    //    var destinationDS = destinationVC.router!.dataStore!
-    //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-    //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-    //  }
-    //}
-
-    // MARK: Navigation
-
-    //func navigateToSomewhere(source: MoviesViewController, destination: SomewhereViewController) {
-    //
-    //  source.show(destination, sender: nil)
-    //}
-
-    // MARK: Passing data
-
-    //func passDataToSomewhere(source: MoviesDataStore, destination: inout SomewhereDataStore) {
-    //
-    //  destination.name = source.name
-    //}
+    func rotueDeatilScene() {
+        let detailViewController = UIStoryboard.init(name: "Movies", bundle: nil).instantiateViewController(withIdentifier: "MovieViewController") as! MovieViewController
+        detailViewController.modalPresentationStyle = .overFullScreen
+        detailViewController.posterImageUrl = URL(string: dataStore?.movieModel?.fullPosterPath ?? "")
+        detailViewController.posterTitle = dataStore?.movieModel?.name
+        detailViewController.movieDescription = dataStore?.movieModel?.overview
+        detailViewController.movideID = dataStore?.movieModel?.id
+        detailViewController.index = dataStore?.index ?? 0
+        viewController?.present(detailViewController, animated: true, completion: nil)
+    }
 }
