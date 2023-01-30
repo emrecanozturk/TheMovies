@@ -11,7 +11,7 @@
         <!--Popular Movies-->
         <scene sceneID="750-OM-I7k">
             <objects>
-                <viewController title="Popular Movies" id="Vy5-EU-Wms" customClass="MoviesViewController" customModule="Flicks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoviesViewController" title="Popular Movies" id="Vy5-EU-Wms" customClass="MoviesViewController" customModule="Flicks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o4G-Mu-dLx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

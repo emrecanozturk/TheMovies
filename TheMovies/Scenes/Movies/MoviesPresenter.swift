@@ -9,6 +9,7 @@
 import UIKit
 
 protocol MoviesPresentationLogic {
+    func presentLoading()
     func presentMovies(response: Movies.Models.Response)
     func presentFailure(message: String)
 }
@@ -18,6 +19,8 @@ class MoviesPresenter: MoviesPresentationLogic {
   
     // MARK: Present Movies
   
+    func presentLoading() {}
+    
     func presentMovies(response: Movies.Models.Response) {
         let viewModel = Movies.Models.ViewModel(model: response.model)
         viewController?.displayMovies(viewModel: viewModel)

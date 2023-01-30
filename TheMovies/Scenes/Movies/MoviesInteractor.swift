@@ -25,9 +25,10 @@ class MoviesInteractor: MoviesBusinessLogic, MoviesDataStore {
     var movieModel: MovieResponseModel?
     var index: Int?
   
-    // MARK: Do something
+    // MARK: Present datas
   
     func getMovies(request: Movies.Models.Request) {
+        presenter?.presentLoading()
         worker = MoviesWorker()
         worker?.getMovies(request: request, successCallback: { [weak self] movies in
             guard let self = self else { return }

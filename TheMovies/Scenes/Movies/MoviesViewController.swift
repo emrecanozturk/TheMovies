@@ -24,7 +24,7 @@ class MoviesViewController: UIViewController, MoviesDisplayLogic {
     private var totalPageCount: Int = 0
     private var maxPageCount: Int = 0
 
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: Object lifecycle
   
