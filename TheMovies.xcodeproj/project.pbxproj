@@ -21,6 +21,20 @@
 		D449245829872F3D00F6FD8E /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449245729872F3D00F6FD8E /* NetworkRequest.swift */; };
 		D449245A29872F4600F6FD8E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449245929872F4600F6FD8E /* Logger.swift */; };
 		D449245C29872F5A00F6FD8E /* BaseResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449245B29872F5A00F6FD8E /* BaseResponseProtocol.swift */; };
+		D4492463298743CE00F6FD8E /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449245D298743CE00F6FD8E /* MoviesPresenter.swift */; };
+		D4492464298743CE00F6FD8E /* MoviesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449245E298743CE00F6FD8E /* MoviesWorker.swift */; };
+		D4492465298743CE00F6FD8E /* MoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449245F298743CE00F6FD8E /* MoviesRouter.swift */; };
+		D4492466298743CE00F6FD8E /* MoviesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4492460298743CE00F6FD8E /* MoviesModels.swift */; };
+		D4492467298743CE00F6FD8E /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4492461298743CE00F6FD8E /* MoviesViewController.swift */; };
+		D4492468298743CE00F6FD8E /* MoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4492462298743CE00F6FD8E /* MoviesInteractor.swift */; };
+		D449246B298745F600F6FD8E /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449246A298745F600F6FD8E /* MovieTableViewCell.swift */; };
+		D449246E2987464300F6FD8E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D449246D2987464300F6FD8E /* Kingfisher */; };
+		D44924712987465900F6FD8E /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = D44924702987465900F6FD8E /* Hero */; };
+		D44924732987469500F6FD8E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44924722987469500F6FD8E /* UIImageView+Extension.swift */; };
+		D44924752987476300F6FD8E /* MoviesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44924742987476300F6FD8E /* MoviesTableViewDelegate.swift */; };
+		D44924772987477700F6FD8E /* MoviesTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44924762987477700F6FD8E /* MoviesTableViewDataSource.swift */; };
+		D449247B298747BC00F6FD8E /* MoviesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449247A298747BC00F6FD8E /* MoviesResponseModel.swift */; };
+		D449247D298749FC00F6FD8E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449247C298749FC00F6FD8E /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +73,18 @@
 		D449245729872F3D00F6FD8E /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		D449245929872F4600F6FD8E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		D449245B29872F5A00F6FD8E /* BaseResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseProtocol.swift; sourceTree = "<group>"; };
+		D449245D298743CE00F6FD8E /* MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
+		D449245E298743CE00F6FD8E /* MoviesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesWorker.swift; sourceTree = "<group>"; };
+		D449245F298743CE00F6FD8E /* MoviesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRouter.swift; sourceTree = "<group>"; };
+		D4492460298743CE00F6FD8E /* MoviesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModels.swift; sourceTree = "<group>"; };
+		D4492461298743CE00F6FD8E /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		D4492462298743CE00F6FD8E /* MoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInteractor.swift; sourceTree = "<group>"; };
+		D449246A298745F600F6FD8E /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		D44924722987469500F6FD8E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		D44924742987476300F6FD8E /* MoviesTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewDelegate.swift; sourceTree = "<group>"; };
+		D44924762987477700F6FD8E /* MoviesTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewDataSource.swift; sourceTree = "<group>"; };
+		D449247A298747BC00F6FD8E /* MoviesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponseModel.swift; sourceTree = "<group>"; };
+		D449247C298749FC00F6FD8E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44924712987465900F6FD8E /* Hero in Frameworks */,
+				D449246E2987464300F6FD8E /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +194,8 @@
 		D449244A2987219400F6FD8E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D44924722987469500F6FD8E /* UIImageView+Extension.swift */,
+				D449247C298749FC00F6FD8E /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,12 +210,8 @@
 		D449244C298721B900F6FD8E /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				D449245129872F2100F6FD8E /* DataConvertible.swift */,
-				D449245529872F3400F6FD8E /* NetworkTask.swift */,
-				D449245329872F2A00F6FD8E /* Networking.swift */,
-				D449245729872F3D00F6FD8E /* NetworkRequest.swift */,
-				D449245929872F4600F6FD8E /* Logger.swift */,
-				D449245B29872F5A00F6FD8E /* BaseResponseProtocol.swift */,
+				D44924782987479100F6FD8E /* Base */,
+				D4492479298747A500F6FD8E /* ResponseModels */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -202,8 +228,8 @@
 		D449244E298721FB00F6FD8E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D44924502987241900F6FD8E /* SingleMovie */,
 				D449244F298723F300F6FD8E /* Movies */,
+				D44924502987241900F6FD8E /* SingleMovie */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -211,6 +237,13 @@
 		D449244F298723F300F6FD8E /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				D4492469298745D400F6FD8E /* TableView */,
+				D449245D298743CE00F6FD8E /* MoviesPresenter.swift */,
+				D449245E298743CE00F6FD8E /* MoviesWorker.swift */,
+				D449245F298743CE00F6FD8E /* MoviesRouter.swift */,
+				D4492460298743CE00F6FD8E /* MoviesModels.swift */,
+				D4492461298743CE00F6FD8E /* MoviesViewController.swift */,
+				D4492462298743CE00F6FD8E /* MoviesInteractor.swift */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -220,6 +253,37 @@
 			children = (
 			);
 			path = SingleMovie;
+			sourceTree = "<group>";
+		};
+		D4492469298745D400F6FD8E /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				D449246A298745F600F6FD8E /* MovieTableViewCell.swift */,
+				D44924742987476300F6FD8E /* MoviesTableViewDelegate.swift */,
+				D44924762987477700F6FD8E /* MoviesTableViewDataSource.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		D44924782987479100F6FD8E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D449245129872F2100F6FD8E /* DataConvertible.swift */,
+				D449245529872F3400F6FD8E /* NetworkTask.swift */,
+				D449245329872F2A00F6FD8E /* Networking.swift */,
+				D449245729872F3D00F6FD8E /* NetworkRequest.swift */,
+				D449245929872F4600F6FD8E /* Logger.swift */,
+				D449245B29872F5A00F6FD8E /* BaseResponseProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D4492479298747A500F6FD8E /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				D449247A298747BC00F6FD8E /* MoviesResponseModel.swift */,
+			);
+			path = ResponseModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +302,10 @@
 			dependencies = (
 			);
 			name = TheMovies;
+			packageProductDependencies = (
+				D449246D2987464300F6FD8E /* Kingfisher */,
+				D44924702987465900F6FD8E /* Hero */,
+			);
 			productName = TheMovies;
 			productReference = D44924142987206F00F6FD8E /* TheMovies.app */;
 			productType = "com.apple.product-type.application";
@@ -310,6 +378,10 @@
 				Base,
 			);
 			mainGroup = D449240B2987206F00F6FD8E;
+			packageReferences = (
+				D449246C2987464300F6FD8E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D449246F2987465900F6FD8E /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = D44924152987206F00F6FD8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -353,14 +425,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44924752987476300F6FD8E /* MoviesTableViewDelegate.swift in Sources */,
 				D44924182987206F00F6FD8E /* AppDelegate.swift in Sources */,
 				D449245629872F3400F6FD8E /* NetworkTask.swift in Sources */,
+				D4492463298743CE00F6FD8E /* MoviesPresenter.swift in Sources */,
+				D4492468298743CE00F6FD8E /* MoviesInteractor.swift in Sources */,
 				D449241A2987206F00F6FD8E /* SceneDelegate.swift in Sources */,
+				D449246B298745F600F6FD8E /* MovieTableViewCell.swift in Sources */,
 				D449245229872F2100F6FD8E /* DataConvertible.swift in Sources */,
+				D4492465298743CE00F6FD8E /* MoviesRouter.swift in Sources */,
+				D449247B298747BC00F6FD8E /* MoviesResponseModel.swift in Sources */,
 				D449245C29872F5A00F6FD8E /* BaseResponseProtocol.swift in Sources */,
+				D4492464298743CE00F6FD8E /* MoviesWorker.swift in Sources */,
+				D449247D298749FC00F6FD8E /* UIViewController+Extensions.swift in Sources */,
+				D44924732987469500F6FD8E /* UIImageView+Extension.swift in Sources */,
+				D4492467298743CE00F6FD8E /* MoviesViewController.swift in Sources */,
+				D4492466298743CE00F6FD8E /* MoviesModels.swift in Sources */,
 				D449245A29872F4600F6FD8E /* Logger.swift in Sources */,
 				D449245829872F3D00F6FD8E /* NetworkRequest.swift in Sources */,
 				D449245429872F2A00F6FD8E /* Networking.swift in Sources */,
+				D44924772987477700F6FD8E /* MoviesTableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheMovies/Plists/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "The Movies";
@@ -546,12 +631,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Movies;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.teknasyon.TheMovies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -569,6 +655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheMovies/Plists/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "The Movies";
@@ -578,12 +665,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Movies;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.teknasyon.TheMovies;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -706,6 +794,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D449246C2987464300F6FD8E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		D449246F2987465900F6FD8E /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D449246D2987464300F6FD8E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D449246C2987464300F6FD8E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		D44924702987465900F6FD8E /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D449246F2987465900F6FD8E /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D449240C2987206F00F6FD8E /* Project object */;
 }
